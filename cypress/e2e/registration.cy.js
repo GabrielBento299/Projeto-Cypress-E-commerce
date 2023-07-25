@@ -9,7 +9,6 @@ describe('Registration', () => {
         const nameFirst = faker.person.firstName();
         const nameLast = faker.person.lastName();
 
-        
         cy.visit('http://www.automationpractice.pl/index.php?controller=authentication&back=my-account');
         
         cy.get('#email_create').type(emailFaker);
