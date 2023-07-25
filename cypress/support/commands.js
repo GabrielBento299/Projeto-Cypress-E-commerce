@@ -32,3 +32,23 @@ Cypress.Commands.add('login', (email, password) => {
     
       cy.get('#SubmitLogin').click();
 });
+
+Cypress.Commands.add('productInCart', () => {
+    cy.visit('http://www.automationpractice.pl/index.php?id_category=3&controller=category');
+
+    cy.get('.button-container > .ajax_add_to_cart_button')
+      .first()
+      .click();
+    cy.reload();
+});
+
+Cypress.Commands.add('allProductsInCart', () => {
+    cy.visit('http://www.automationpractice.pl/index.php?id_category=3&controller=category');
+
+    cy.get('.button-container .ajax_add_to_cart_button').each(($el) => {
+      cy.wrap($el).click();
+      cy.get('.fancybox-item').click();
+    });
+           
+    cy.reload();
+});
