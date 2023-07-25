@@ -2,32 +2,33 @@
 
 import { faker } from '@faker-js/faker';
 
-describe('Registration', () => {
-    it('should register with success', () => {
-        const emailFaker = faker.internet.email();
-        const passwordFaker = faker.internet.password();
-        const nameFirst = faker.person.firstName();
-        const nameLast = faker.person.lastName();
+describe('Registration page tests', () => {
+    context('success register', () => {
+        it('should register with success', () => {
+            const emailFaker = faker.internet.email();
+            const nameFirst = faker.person.firstName();
+            const nameLast = faker.person.lastName();
+            const passwordFaker = faker.internet.password();
+    
+           cy.registration(emailFaker, nameFirst, nameLast, passwordFaker);
+           cy.get('#submitAccount > span').click();
+    
+            cy.get('.alert')
+                .should('be.visible')
+                .and('contain', 'Your account has been created.');
+            cy.get('.header_user_info  span')
+                .should('contain', nameFirst, '' + nameLast);
+        });
+    });
 
-        cy.visit('http://www.automationpractice.pl/index.php?controller=authentication&back=my-account');
-        
-        cy.get('#email_create').type(emailFaker);
-        cy.get('#SubmitCreate > span').click();
-        
-        cy.get('#id_gender1').click();
-        cy.get('#customer_firstname').type(nameFirst);
-        cy.get('#customer_lastname').type(nameLast);
-        cy.get('#passwd').type(passwordFaker, { log: false });
-        cy.get('#days').select('5');
-        cy.get('#months').select('March');
-        cy.get('#years').select('2001');
-
-        cy.get('#submitAccount > span').click();
-
-        cy.get('.alert')
-            .should('be.visible')
-            .and('contain', 'Your account has been created.');
-        cy.get('.header_user_info  span')
-        .should('contain', nameFirst, '' + nameLast);
+    context('Error register', () => {
+        it('should display an error message when registering an email already registered', () => {
+            const email = Cypress.env('user_email');
+            cy.registration(email);
+    
+            cy.get('.row .alert.alert-danger ')
+                .should('be.visible')
+                .and('contain', 'An account using this email address has already been registered. Please enter a valid password or request a new one.');
+        });
     });
 });

@@ -9,6 +9,7 @@ describe('Success Login', () => {
     beforeEach(() => {
         cy.visit('http://www.automationpractice.pl/index.php?controller=authentication&back=my-account');
     });
+    
     it('should login with success', () => {
         cy.get('#email').type(email);
         cy.get('#passwd').type(password);
