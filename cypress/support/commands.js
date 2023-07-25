@@ -14,3 +14,21 @@ Cypress.Commands.add('registration', (email, firstName, lastName, password) => {
         cy.get('#years').select('2001');
     }
 });
+
+Cypress.Commands.add('login', (email, password) => {
+    cy.visit('http://www.automationpractice.pl/index.php?controller=authentication&back=my-account');
+
+    if (email === '') {
+        cy.get('#email').clear(); // Verifica se o campo de email está vazio
+      } else {
+        cy.get('#email').type(email);
+      }
+    
+      if (password === '') {
+        cy.get('#passwd').clear(); // Verifica se o campo de senha está vazio
+      } else {
+        cy.get('#passwd').type(password);
+      }
+    
+      cy.get('#SubmitLogin').click();
+});
