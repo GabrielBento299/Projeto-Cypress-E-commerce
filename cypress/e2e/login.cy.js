@@ -39,6 +39,7 @@ describe('Login page tests', () => {
                 .should('be.visible')
                 .and('contain', 'An email address required.');
         });
+        
         it('should display an error message when not filling in the passowrd field', () => {
             cy.login(email, '');
 

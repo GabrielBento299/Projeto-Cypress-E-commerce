@@ -3,7 +3,7 @@
 import { faker } from '@faker-js/faker';
 
 describe('Registration page tests', () => {
-    context('success register', () => {
+    context('Success register', () => {
         it('should register with success', () => {
             const emailFaker = faker.internet.email();
             const nameFirst = faker.person.firstName();
