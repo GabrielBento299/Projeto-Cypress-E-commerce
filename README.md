@@ -2,13 +2,13 @@
 
 #### Site ultilizado para os testes: http://www.automationpractice.pl/index.php
 
-## funcionalidade de Cadastro
+## Funcionalidade de Cadastro
 ![registration cy js](https://github.com/GabrielBento299/Projeto-Cypress-E-commerce/assets/86307663/d7e928f8-bc5c-413e-9cb3-e5e16a25d2e3)
 
 - Deve cadastar com sucesso
 - Deve exibir uma mensagem de erro ao cadastrar um e-mail já cadastrado
   
-## funcionalidade de Login
+## Funcionalidade de Login
 ![login cy js](https://github.com/GabrielBento299/Projeto-Cypress-E-commerce/assets/86307663/7ccbe12b-3b2f-4fb8-92fb-2fbadc8f7924)
 
 - Deve fazer login com sucesso
@@ -17,7 +17,7 @@
 - Deve exibir uma mensagem de erro ao não preencher o campo de e-mail
 - Deve exibir uma mensagem de erro ao não preencher o campo senha
 
-## funcionalidade de Produto e Carrinho
+## Funcionalidade de Produto e Carrinho
 ![product cy js](https://github.com/GabrielBento299/Projeto-Cypress-E-commerce/assets/86307663/c38b44ad-baed-41a0-b02f-e669eb8c2b36)
 
 - Deve adicionar no carrinho um produto com sucesso
@@ -28,7 +28,7 @@
 - Deve somar os valores do produto ao aumentar a quantidade
 - Deve diminuir os valores do produto diminuindo a quantidade
 
-## funcionalidade de Busca
+## Funcionalidade de Busca
 ![search cy js](https://github.com/GabrielBento299/Projeto-Cypress-E-commerce/assets/86307663/15ea9478-4d3c-43bd-b6f3-3980c8407db1)
 
 - Deve exibir o produto pesquisado com sucesso
