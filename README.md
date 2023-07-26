@@ -1,6 +1,6 @@
-# Cypress Template
+# Projeto Cypress E-Commerce 
 
-Projeto de exemplo para realização de testes de integração (API) utilizando o Cypress.
+Site ultilizado para os testes: http://www.automationpractice.pl/index.php
 
 ## Pré-requisitos:
 - [NodeJS](https://nodejs.org/en/download/ "NodeJS")
