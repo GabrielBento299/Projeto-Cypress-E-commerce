@@ -53,9 +53,7 @@ describe('Product Page and Cart Tests', () => {
         it('should remove product in cart with success', () => {
             cy.get('.icon-trash').click();
             
-            cy.get('.alert')
-                .should('be.visible')
-                .and('contain', 'Your shopping cart is empty.');
+            cy.messageAlert('Your shopping cart is empty.');
         });
 
         it('should add the product values when increasing the quantity', () => {

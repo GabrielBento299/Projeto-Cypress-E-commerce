@@ -49,8 +49,6 @@ Cypress.Commands.add('allProductsInCart', () => {
       cy.wrap($el).click();
       cy.get('.fancybox-item').click();
     });
-           
-    cy.reload();
 });
 
 Cypress.Commands.add('messageAlert', message => {
