@@ -101,25 +101,22 @@ Para que eu possa revisar os itens selecionados e com o processo de compra de fo
 
 Funcionalidade de Busca:
 
-Como um cliente em busca de um produto específico,
+Como um cliente,
 Quero realizar pesquisas no site para encontrar rapidamente os itens que desejo,
 Para que eu possa economizar tempo e encontrar exatamente o que estou procurando.
 
     Cenário: Deve exibir o produto pesquisado com sucesso
     Dado que estou na página inicial
     Quando eu pesquiso por um produto válido
-    E eu clico no botão de pesquisa
-    Then o produto pesquisado deve ser exibido corretamente
+    Então o produto pesquisado deve ser exibido corretamente
 
     Cenário: Deve exibir mensagem de erro ao pesquisar sem o nome do produto
     Dado que estou na página inicial
     Quando eu deixo o campo de pesquisa em branco
-    E eu clico no botão de pesquisa
-    Then uma mensagem de erro deve ser exibida informando que o nome do produto é obrigatório
+    Então uma mensagem de erro deve ser exibida informando que o nome do produto é obrigatório
 
     Cenário: Deve exibir mensagem de erro ao pesquisar um produto inexistente
     Dado que estou na página inicial
     Quando eu pesquiso por um produto inexistente
-    E eu clico no botão de pesquisa
-    Then uma mensagem de erro deve ser exibida informando que o produto não foi encontrado
+    Então uma mensagem de erro deve ser exibida informando que o produto não foi encontrado
 
