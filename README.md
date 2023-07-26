@@ -2,7 +2,7 @@
 
 #### Site ultilizado para os testes: http://www.automationpractice.pl/index.php
 
-<a href="testCase.md">TesteCase</a>
+[aula 2](testCase.md)
 
 ## Funcionalidade de Cadastro
 ![registration cy js](https://github.com/GabrielBento299/Projeto-Cypress-E-commerce/assets/86307663/d7e928f8-bc5c-413e-9cb3-e5e16a25d2e3)
