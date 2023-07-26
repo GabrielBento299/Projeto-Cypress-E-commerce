@@ -19,13 +19,13 @@ Cypress.Commands.add('login', (email, password) => {
     cy.visit('http://www.automationpractice.pl/index.php?controller=authentication&back=my-account');
 
     if (email === '') {
-        cy.get('#email').clear(); // Verifica se o campo de email está vazio
+        cy.get('#email').clear();
       } else {
         cy.get('#email').type(email);
       }
     
       if (password === '') {
-        cy.get('#passwd').clear(); // Verifica se o campo de senha está vazio
+        cy.get('#passwd').clear(); 
       } else {
         cy.get('#passwd').type(password);
       }
@@ -51,4 +51,10 @@ Cypress.Commands.add('allProductsInCart', () => {
     });
            
     cy.reload();
+});
+
+Cypress.Commands.add('messageAlert', message => {
+    cy.get('.alert')
+      .should('be.visible')
+      .and('contain', message);
 });

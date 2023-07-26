@@ -2,8 +2,8 @@
 
 import { faker } from '@faker-js/faker';
 
-describe('Registration page tests', () => {
-    context('Success register', () => {
+describe('Registration Page Tests', () => {
+    context('Success Register', () => {
         it('should register with success', () => {
             const emailFaker = faker.internet.email();
             const nameFirst = faker.person.firstName();
@@ -21,7 +21,7 @@ describe('Registration page tests', () => {
         });
     });
 
-    context('Error register', () => {
+    context('Error Register', () => {
         it('should display an error message when registering an email already registered', () => {
             const email = Cypress.env('user_email');
             cy.registration(email);

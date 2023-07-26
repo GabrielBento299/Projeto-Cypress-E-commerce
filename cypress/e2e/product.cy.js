@@ -13,6 +13,7 @@ describe('Product Page and Cart Tests', () => {
                  .should('be.visible')
                  .and('have.length', 1);
          });
+         
          it('should add in cart all product with success', () => {
              cy.allProductsInCart();
      
