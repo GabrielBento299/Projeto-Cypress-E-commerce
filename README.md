@@ -1,5 +1,7 @@
 <h1>Projeto Cypress E-Commerce</h1>
 
+<a href="testCase.md">TesteCase</a>
+
 #### Site ultilizado para os testes: http://www.automationpractice.pl/index.php
 
 ## Funcionalidade de Cadastro
