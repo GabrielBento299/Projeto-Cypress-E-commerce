@@ -1,7 +1,9 @@
 Funcionalidade de Cadastro:
 
 Como um novo usuário,
+<Br>
 Quero me cadastrar no site,
+<Br>
 Para poder realizar compras e que eu possa acessar os recursos exclusivos.
 
     Cenário: Deve cadastrar com sucesso
@@ -15,12 +17,14 @@ Para poder realizar compras e que eu possa acessar os recursos exclusivos.
     E eu preencho os demais campos obrigatórios com informações válidas
     Então uma mensagem de erro deve ser exibida informando que o e-mail já está cadastrado
 
-<----------------------------------------------------------------------------------------->
+<------------------------------------------------------------------------------><------------------------------------------------------------------------->
 
 Funcionalidade de Login:
 
 Como um cliente do E-commerce,
+<Br>
 Quero fazer login (autenticação) no site,
+<Br>
 Para que eu possa visualizar meu perfil e meus pedidos.
 
     Cenário: Deve fazer login com sucesso
@@ -53,12 +57,14 @@ Para que eu possa visualizar meu perfil e meus pedidos.
     E eu deixo o campo de senha em branco
     Então uma mensagem de erro deve ser exibida informando que a senha é obrigatória
 
-<----------------------------------------------------------------------------------------->
+<------------------------------------------------------------------------------><------------------------------------------------------------------------->
 
 Funcionalidade de Produto e Carrinho:
 
 Como um cliente interessado em fazer compras,
+<Br>
 Quero adicionar produtos ao carrinho e gerenciar suas quantidades,
+<Br>
 Para que eu possa revisar os itens selecionados e com o processo de compra de forma conveniente.
 
     Cenário: Deve adicionar no carrinho um produto com sucesso
@@ -96,12 +102,14 @@ Para que eu possa revisar os itens selecionados e com o processo de compra de fo
     Quando eu diminuo a quantidade de um produto
     Então o valor total do carrinho deve ser atualizado corretamente
 
-<----------------------------------------------------------------------------------------->
+<------------------------------------------------------------------------------><------------------------------------------------------------------------->
 
 Funcionalidade de Busca:
 
 Como um cliente,
+<Br>
 Quero realizar pesquisas no site para encontrar rapidamente os itens que desejo,
+<Br>
 Para que eu possa economizar tempo e encontrar exatamente o que estou procurando.
 
     Cenário: Deve exibir o produto pesquisado com sucesso
