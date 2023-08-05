@@ -1,4 +1,3 @@
-
 Funcionalidade de Cadastro:
 
 Como um novo usuário,
